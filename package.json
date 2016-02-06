@@ -1,0 +1,23 @@
+{
+  "name": "bizzy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "cookie": "^0.2.3",
+    "cookie-signature": "^1.0.6",
+    "ejs": "^2.4.1",
+    "express-session": "^1.13.0",
+    "express": "^4.13.4",
+    "request": "^2.69.0",
+    "cookie-parser": "^1.4.1",
+    "shopify-node-api": "^1.6.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

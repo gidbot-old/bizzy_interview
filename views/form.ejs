@@ -1,0 +1,42 @@
+<html>
+<head> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+</head>
+<style>
+	.coupon-form{
+		margin-top: 30px;
+		margin-left: 15px;
+	}
+</style>
+<form class='coupon-form col-xs-6' method="post">
+    <form role="form">
+      <div class="form-group">
+	    <label for="code-prefix">Code Prefix:</label>
+	    <input class="form-control" name="code">
+	  </div>
+
+	  <div class="form-group">
+	    <label for="discount_type">Discount Type:</label>
+	    <select class="form-control" name="discount_type">
+	        <option value='fixed_amount'>Dollars</option>
+	        <option value='percentage'>Percentage</option>
+	      </select>
+     
+	  </div>
+
+	  <div class="form-group">
+	    <label for="value">Value</label>
+	    <input class="form-control" name="value">
+	  </div>
+
+	  <div class="form-group">
+	    <label for="amount">Number of Coupons</label>
+	    <input class="form-control" name="amount">
+	  </div>
+
+	  <button type="submit" class="btn btn-default">Submit</button>
+	</form>
+
+</form>
+</html>
