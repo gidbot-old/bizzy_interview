@@ -81,13 +81,13 @@ router.post('/discounts/new', function (req, res) {
 				 	 discount_never_expires: '' 
 				}
 
-				codes.push({code:req.body.code+"_"+i, discount_type: req.body.discount_type,value:  parseInt(req.body.value)});
+				codes.push(post_data.discount);
 
 				var url =  req.session.url+ '/admin/discounts'; 
 				request.post({ url: url, form: post_data, headers: headers }, function (err, response, body) {
 					checkCount--; 
 					if (checkCount < 2) {
-						res.send('Added the following codes: <br>' , codes);
+						res.send(codes);
 					}
 				});
 
